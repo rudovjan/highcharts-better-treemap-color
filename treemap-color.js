@@ -14,7 +14,7 @@
 
       var middlePoint = (this.min + this.max) / 2;
 
-      if (this.chart.options.colorAxis.middlePoint !== undefined || 
+      if (this.chart.options.colorAxis.middlePoint !== undefined && 
         this.chart.options.colorAxis.middlePoint !== null) {
         middlePoint = this.chart.options.colorAxis.middlePoint;
       }
@@ -59,7 +59,7 @@
 
       var middlePoint = (this.min + this.max) / 2;
 
-      if (this.chart.options.colorAxis.middlePoint !== undefined || 
+      if (this.chart.options.colorAxis.middlePoint !== undefined && 
         this.chart.options.colorAxis.middlePoint !== null) {
         middlePoint = this.chart.options.colorAxis.middlePoint;
       }
