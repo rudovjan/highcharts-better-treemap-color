@@ -1,2 +1,4 @@
-# highcharts-better-treemap-color
-Better coloring for treemap chart
+Highcharts treemap colors
+=========================
+
+https://rudovjan.github.io/highcharts-better-treemap-color/

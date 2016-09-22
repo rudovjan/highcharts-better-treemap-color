@@ -1,0 +1,19 @@
+{
+  "name": "highcharts-better-treemap-color",
+  "version": "1.0.0",
+  "description": "Better colors for treemap",
+  "main": "treemap-color.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rudovjan/highcharts-better-treemap-color.git"
+  },
+  "author": "Jan Rudovsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudovjan/highcharts-better-treemap-color/issues"
+  },
+  "homepage": "https://github.com/rudovjan/highcharts-better-treemap-color"
+}
