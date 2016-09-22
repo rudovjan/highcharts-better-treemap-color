@@ -18,7 +18,7 @@
     "description": "Better coloring for treemap",
     "keywords": [
         "treemap",
-        "color", "colors"
+        "color", "colors", "chart"
     ],
     "homepage": "https://rudovjan.github.io/highcharts-better-treemap-color/",
     "docs": "https://rudovjan.github.io/highcharts-better-treemap-color/",
