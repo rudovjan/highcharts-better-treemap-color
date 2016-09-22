@@ -1,0 +1,37 @@
+{
+    "name": "Better coloring for treemap",
+    "version": "1.1",
+    "title": "Better coloring for treemap",
+    "author": {
+        "name": "Jan Rudovsky",
+        "url": "http://rudovsky.blogspot.cz/"
+    },
+    "licenses": [
+        {
+            "type": "GPL v2",
+            "url": "https://github.com/rudovjan/highcharts-better-treemap-color/blob/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+        "Highcharts": ">=3.0.0"
+    },
+    "description": "Better coloring for treemap",
+    "keywords": [
+        "treemap",
+        "color", "colors"
+    ],
+    "homepage": "https://rudovjan.github.io/highcharts-better-treemap-color/",
+    "docs": "https://rudovjan.github.io/highcharts-better-treemap-color/",
+    "bugs": "https://github.com/rudovjan/highcharts-better-treemap-color/issues",
+    "download": "https://rudovjan.github.io/highcharts-better-treemap-color/",
+    "demo": [
+        "https://jsfiddle.net/rudovsky/g3xo9ww2/"
+    ],
+    "maintainers": [
+        {
+            "name": "Jan Rudovsky",
+            "email": "rudovsky@gmail.com",
+            "url": ""
+        }
+    ]
+}
