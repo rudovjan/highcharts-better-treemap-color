@@ -1,5 +1,5 @@
 $(function () {
-    $('#chartWith').highcharts({
+    $('#chartWithMiddle').highcharts({
         colorAxis: {
             lowerColors: {
                 minColor: '#f04d5a',
@@ -9,7 +9,7 @@ $(function () {
                 minColor: '#e5f8f4',
                 maxColor: '#04c197'
             },
-            // middlePoint: -2
+            middlePoint: -2
         },
         series: [{
             type: 'treemap',
