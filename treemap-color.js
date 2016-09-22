@@ -12,7 +12,13 @@
       this.chart.options.colorAxis.upperColors &&
       (this.min !== undefined || this.min !== null)) {
 
-      var middlePoint = (this.min + this.max) / 2
+      var middlePoint = (this.min + this.max) / 2;
+
+      if (this.chart.options.colorAxis.middlePoint !== undefined && 
+        this.chart.options.colorAxis.middlePoint !== null) {
+        middlePoint = this.chart.options.colorAxis.middlePoint;
+      }
+
       var pos = 1 - ((this.max - middlePoint) / ((this.max - this.min) || 1));
       var lowerColors = this.chart.options.colorAxis.lowerColors;
       var upperColors = this.chart.options.colorAxis.upperColors;
@@ -52,6 +58,11 @@
       var upperColors = this.chart.options.colorAxis.upperColors;
 
       var middlePoint = (this.min + this.max) / 2;
+
+      if (this.chart.options.colorAxis.middlePoint !== undefined && 
+        this.chart.options.colorAxis.middlePoint !== null) {
+        middlePoint = this.chart.options.colorAxis.middlePoint;
+      }
 
       var min = this.min;
       var max = this.max;

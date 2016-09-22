@@ -1,6 +1,6 @@
 {
   "name": "highcharts-better-treemap-color",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Better colors for treemap",
   "main": "treemap-color.js",
   "scripts": {
