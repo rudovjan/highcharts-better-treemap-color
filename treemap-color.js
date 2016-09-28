@@ -23,6 +23,17 @@
       var lowerColors = this.chart.options.colorAxis.lowerColors;
       var upperColors = this.chart.options.colorAxis.upperColors;
 
+      if (reversed) {
+        lowerColors = {
+          maxColor: this.chart.options.colorAxis.upperColors.minColor,
+          minColor: this.chart.options.colorAxis.upperColors.maxColor
+        }
+        upperColors = {
+          maxColor: this.chart.options.colorAxis.lowerColors.minColor,
+          minColor: this.chart.options.colorAxis.lowerColors.maxColor,
+        }
+      }
+
 
       grad = horiz ? [ one, 0, zero, 0 ] : [ 0, zero, 0, one ]; // #3190
       this.legendColor = {
@@ -47,7 +58,8 @@
       dataClass,
       i,
       chart = this.chart,
-      legend = chart.legend;
+      legend = chart.legend,
+      reversed = this.reversed;
 
 
     if (this.chart.options.colorAxis.lowerColors &&
@@ -75,15 +87,14 @@
       if (value >= middlePoint) {
         // upper value
         min = middlePoint;
-        colorsToPick = upperColors;
+        colorsToPick = reversed? lowerColors : upperColors;
       } else if(value < middlePoint) {
         // lower value
         max = middlePoint;
-        colorsToPick = lowerColors;
+        colorsToPick = reversed ? upperColors : lowerColors;
       }
 
       pos = 1 - ((max - value) / ((max - min) || 1));
-
 
       color = this.tweenColors(
         H.Color(colorsToPick.minColor),
