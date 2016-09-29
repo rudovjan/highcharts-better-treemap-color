@@ -94,6 +94,13 @@
         colorsToPick = reversed ? upperColors : lowerColors;
       }
 
+      if (reversed) {
+        colorsToPick = {
+          minColor: colorsToPick.maxColor,
+          maxColor: colorsToPick.minColor
+        }
+      }
+
       pos = 1 - ((max - value) / ((max - min) || 1));
 
       color = this.tweenColors(
