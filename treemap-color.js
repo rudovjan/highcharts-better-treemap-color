@@ -108,9 +108,9 @@
         H.Color(colorsToPick.maxColor),
         pos
       );
-
+      
       this.setLegendColor();
-      legend.colorizeItem(this, true);
+      legend.options.enabled ? legend.colorizeItem(this, true) : undefined;
 
       return color;
     } else {
